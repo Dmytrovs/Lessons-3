@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-1</title>
+</head>
+<body>
+    <script>
+        const nameKidsOne = prompt("Ваше ім'я?", "");
+        const quantity1 = parseFloat(prompt("Скільки у вас цукерок?"));
+        const nameKidsTho = prompt("Ваше ім'я?", "");
+        const quantity2 = parseFloat(prompt("Скільки у вас цукерок?"));
+        if (quantity1 > quantity2 ) {
+            alert(`Вітаємо ${nameKidsOne} у вас більше цукерок чим у ${nameKidsTho}`)
+        } else if (quantity2 > quantity1) {
+            alert(`Вітаємо ${nameKidsTho} у вас більше цукерок чим у ${nameKidsOne}`)
+        } else if(quantity1 >= quantity2) {
+            alert(`Вітаємо ${nameKidsOne} та ${nameKidsTho} у вас однакова кількість цукерок!`)
+        };
+    </script>
+</body>
+</html>

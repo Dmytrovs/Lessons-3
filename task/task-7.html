@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-7</title>
+</head>
+<body>
+    <script>
+        const season = parseInt(prompt("Введіть номер місяця, щоб дізнатися, яка зараз пора року"));
+        let result;
+        switch (season) {
+            case 12 :
+            case 1 :
+            case 2 : result = "Зараз зима, одягайтеся тепліше";    
+                break;
+            case 3:
+            case 4:
+            case 5: result = "Зараз весна, вдихніть на повні груди повітря, та не забудьте окуляри!";
+                break;
+            case 6: 
+            case 7:
+            case 8: result = "Зараз літо, насолоджуйтеся та зробіть шоколалний загар вашого тіла!";
+                break;
+            case 9:
+            case 10:
+            case 11: result = "Зараз осінь, робіть золотисті фото та не забувайте парасольку, якщо на вулиці дощ!";
+                break;
+            default: result = "Ви з іншої планети";
+                break;
+        }
+        alert(result);
+    </script>
+</body>
+</html>

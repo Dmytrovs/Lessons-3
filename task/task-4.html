@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-4</title>
+</head>
+<body>
+    <script>
+        let agePeople = parseInt(prompt("Введіть Ваш вік?", ""));
+        const childKindergarten = "Ви є дитиною у садочку";
+        const schoolboy = "Вы ще школяр";
+        const student = "Вы студент!";
+        const employee = "Ви працівник! Але не забувайте, що потрібно жити, а працювати у вільний час!";
+        const pensioner = "Ви вже пенсіонер!"
+        let result;
+        switch (true) {
+            case (agePeople <= 5): result = childKindergarten;
+                break;
+            case (agePeople <= 17): result = schoolboy;
+                break;
+            case (agePeople <= 23): result = student;
+                break;
+            case (agePeople < 65): result = employee;
+                break;
+            case (agePeople >= 65): result = pensioner;
+                break;
+        };
+        alert(result);
+    </script>
+</body>
+</html>
